@@ -547,4 +547,5 @@ html[data-project-entrance] .mobile-design .signature{opacity:0}
 .flow-as-svg>.svg-text{position:absolute!important;visibility:hidden!important;width:0!important;height:0!important}
 .flow-as-svg>.flow-text{position:relative!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;width:auto!important;height:auto!important;overflow:visible!important;clip-path:none!important;white-space:nowrap!important;line-height:var(--flow-lh,normal)!important;top:var(--flow-dy,0px)!important;left:var(--flow-dx,0px)!important;margin:0!important;padding:0!important;text-wrap:nowrap!important}
 :not(.flow-as-svg)>.flow-text>.flow-wrap,:not(.flow-as-svg)>.flow-text>.flow-wrap>.motion-text{display:contents}
+.svg-only{display:none}.flow-as-svg .svg-only{display:inline}
 .flow-as-svg .svg-br::before{content:"\A";white-space:pre}
