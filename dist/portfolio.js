@@ -16,7 +16,7 @@
    delete document.documentElement.dataset.projectImageEntrance;
   }
  } else template?.remove();
- const size=()=>document.documentElement.style.setProperty('--mobile-scale',String(Math.min(700,innerWidth)/393));
+ const size=()=>document.documentElement.style.setProperty('--mobile-scale',String(Math.min(700,document.documentElement.clientWidth||innerWidth)/393));
  size();addEventListener('resize',size,{passive:true});
  const path=location.pathname,from=new URLSearchParams(location.search).get('from');
  const variant=path.match(/^\/(option-[bcd])\//)?.[1]||([].includes(from)?from:null);
