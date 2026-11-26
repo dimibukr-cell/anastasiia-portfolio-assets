@@ -2,7 +2,7 @@
 /* Webflow integration: restore per-element custom properties (stored as data-vars, since Webflow classes cannot hold CSS variables). */
 (()=>{if(!document.documentElement.lang)document.documentElement.lang='en';document.querySelectorAll('[data-vars]').forEach(el=>{el.style.cssText+=(el.style.cssText?';':'')+el.dataset.vars;});
  /* Webflow image elements do not carry loading/decoding/draggable attributes: restore the original behaviour from marker classes. */
- document.querySelectorAll('span.range-input').forEach(s=>{const i=document.createElement('input');for(const a of s.attributes)if(a.name.startsWith('data-'))i.setAttribute(a.name.slice(5),a.value);s.replaceWith(i);});document.querySelectorAll('img').forEach(img=>{img.decoding='async';if(img.classList.contains('ld-eager'))img.loading='eager';if(img.classList.contains('no-drag'))img.draggable=false;});})();
+ document.querySelectorAll('span.range-input').forEach(s=>{const i=document.createElement('input');for(const a of s.attributes)if(a.name.startsWith('data-'))i.setAttribute(a.name.slice(5),a.value);s.replaceWith(i);});document.querySelectorAll('[data-clothes] img,[data-alpha-player] video').forEach(e=>{e.crossOrigin='anonymous'});document.querySelectorAll('img').forEach(img=>{img.decoding='async';if(img.classList.contains('ld-eager'))img.loading='eager';if(img.classList.contains('no-drag'))img.draggable=false;});})();
 'use strict';
 (() => {
  const phone=matchMedia('(max-width:700px)'),template=document.getElementById('mobile-layout');
