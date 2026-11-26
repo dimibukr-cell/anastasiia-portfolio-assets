@@ -549,3 +549,8 @@ html[data-project-entrance] .mobile-design .signature{opacity:0}
 :not(.flow-as-svg)>.flow-text>.flow-wrap,:not(.flow-as-svg)>.flow-text>.flow-wrap>.motion-text{display:contents}
 .svg-only{display:none}.flow-as-svg .svg-only{display:inline}
 .flow-as-svg .svg-br::before{content:"\A";white-space:pre}
+/* Sketch-layer crops: Webflow drops inline styles on images, so restore the original inline geometry with enough specificity */
+.comparison .comparison-scene img.hm10,.comparison .comparison-scene img.hm26,.comparison .comparison-scene img.bf52,.comparison .comparison-scene img.il3,.comparison .comparison-scene img.il73{width:177.723%;left:-38.8615%;top:0%}
+.comparison .comparison-scene img.il20,.comparison .comparison-scene img.il83{width:177.696%;left:-38.8478%;top:0%}
+.comparison .comparison-scene img.il22,.comparison .comparison-scene img.il79{width:177.824%;left:-51.272%;top:0.25%}
+.image-frame img.source.tw22,.image-frame img.source.tw28,.image-frame img.source.tw36,.image-frame img.source.tw38{inset:0;height:auto}
