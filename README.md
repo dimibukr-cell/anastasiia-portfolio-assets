@@ -26,4 +26,4 @@ Images, fonts, the CV and the Open Graph images are hosted by Webflow, not here.
 
 ## Updating
 
-Change a file, commit, then create a new tag (`v1.0.1`, …) and update the version in Webflow (Site settings → Custom code `<link>` and the registered `portfolio` script). Tagged URLs are cached permanently by jsDelivr. Branch URLs (`@main`) are cached for up to 12 hours.
+Change a file, commit, then push, then point Webflow at the new commit hash (pinned `@<commit-sha>` URLs are immutable and cached permanently by jsDelivr). Update both (Site settings → Custom code `<link>` and the registered `portfolio` script). Branch URLs (`@main`) are cached for up to 12 hours.
